@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="4dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <ImageView
+            android:scaleType="fitCenter"
+            android:id="@+id/r_exam1_image"
+            android:src="@drawable/noimage"
+            android:layout_width="64dp"
+            android:layout_height="64dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_weight="3"
+                    android:textColor="#999"
+                    android:textSize="11dp"
+                    android:gravity="right"
+                    android:id="@+id/r_exam1_date_writer"
+                    android:text="2000-00-00 00:00 (000)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:id="@+id/r_exam1_title"
+                    android:text="title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <Button
+                android:layout_margin="5dp"
+                android:id="@+id/r_exam1_contextBTN"
+                android:layout_weight="3"
+                android:text="내용\n보기"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="11dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

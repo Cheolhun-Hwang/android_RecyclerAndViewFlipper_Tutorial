@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Recycler_Tutorial</string>
+    <string name="recycler_nlinearlayout_horizontal">Recycler LinearLayout Horizontal</string>
+</resources>
