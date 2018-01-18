@@ -1,4 +1,4 @@
-package com.hchooney.qewqs.recycler_tutorial.Recycler.Exam1.List;
+package com.hchooney.qewqs.recycler_tutorial.DAO;
 
 /**
  * Created by qewqs on 2018-01-18.

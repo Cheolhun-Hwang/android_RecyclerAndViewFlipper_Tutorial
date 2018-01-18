@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:baselineAligned="false"
             android:gravity="center"
-            android:text="@string/recycler_nlinearlayout_horizontal"
+            android:text="@string/recycler_linearlayout_horizontal"
             android:textColor="@color/black"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -29,6 +29,10 @@
         android:background="@color/background_gray"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/r_exam1_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </LinearLayout>

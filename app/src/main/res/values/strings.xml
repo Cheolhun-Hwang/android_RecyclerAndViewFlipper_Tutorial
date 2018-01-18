@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Recycler_Tutorial</string>
-    <string name="recycler_nlinearlayout_horizontal">Recycler LinearLayout Horizontal</string>
+    <string name="recycler_linearlayout_horizontal">Recycler LinearLayout Horizontal</string>
+    <string name="recycler_linearlayout_Vertical">Recycler LinearLayout Vertical</string>
+    <string name="recycler_GridView">Recycler GridView</string>
+    <string name="recycler_advanced">Recycler Advanced</string>
+    <string name="viewFlipper_exam1">View Flipper Exam One</string>
+    <string name="viewFlipper_exam2">View Flipper Exam Two</string>
 </resources>

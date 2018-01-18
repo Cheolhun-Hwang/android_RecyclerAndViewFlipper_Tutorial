@@ -19,7 +19,9 @@
         <activity android:name=".Recycler.Exam1.RecyclerExam1Activity" />
         <activity android:name=".Recycler.Exam2.RecyclerExam2Activity" />
         <activity android:name=".Recycler.Exam3.RecyclerExam3Activity" />
-        <activity android:name=".Recycler.Exam4.RecyclerExam4Activity"></activity>
+        <activity android:name=".Recycler.Exam4.RecyclerExam4Activity" />
+        <activity android:name=".ViewFlip.Exam1.ViewFlipperExam1Activity" />
+        <activity android:name=".ViewFlip.Exam2.ViewFlipperExam2Activity"></activity>
     </application>
 
 </manifest>
