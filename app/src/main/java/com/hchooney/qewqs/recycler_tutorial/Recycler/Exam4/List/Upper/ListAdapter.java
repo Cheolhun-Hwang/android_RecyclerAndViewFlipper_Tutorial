@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.hchooney.qewqs.recycler_tutorial.DAO.DAO;
 import com.hchooney.qewqs.recycler_tutorial.DAO.Listitem;
+import com.hchooney.qewqs.recycler_tutorial.DAO.WordList;
 import com.hchooney.qewqs.recycler_tutorial.ImageCTRL.ImageCTRL;
 import com.hchooney.qewqs.recycler_tutorial.R;
 import com.hchooney.qewqs.recycler_tutorial.Recycler.Exam4.RecyclerExam4Activity;
@@ -28,11 +29,9 @@ import java.util.ArrayList;
 
 public class ListAdapter extends Adapter {
     private Context mContext;
-    private ArrayList<String> list;
 
-    public ListAdapter(Context mContext, ArrayList<String> list) {
+    public ListAdapter(Context mContext) {
         this.mContext = mContext;
-        this.list = list;
     }
 
     // Allows to remember the last item shown on screen
@@ -49,12 +48,17 @@ public class ListAdapter extends Adapter {
     public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         final ListHolder hold = (ListHolder) holder;
 
-        hold.textView.setText(list.get(position));
+        final WordList wordList = DAO.wlist.get(position);
+
+        hold.textView.setText( (wordList.getIndex()+1) + " 회");
+
         hold.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("upper", "Upper : " + (position+1));
-                RecyclerExam4Activity.setUnderRecycler(position+1);
+
+                RecyclerExam4Activity.underRecycler.setAdapter(
+                        new com.hchooney.qewqs.recycler_tutorial.Recycler.Exam4.List.Under.ListAdapter(mContext, wordList.getList()));
             }
         });
 
@@ -63,7 +67,7 @@ public class ListAdapter extends Adapter {
 
     @Override
     public int getItemCount() {
-        return DAO.list.size();
+        return DAO.wlist.size();
     }
 
     private void setAnimation(View viewToAnimate, int position) {

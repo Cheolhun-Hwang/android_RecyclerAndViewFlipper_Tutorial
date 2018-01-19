@@ -10,10 +10,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
+import com.hchooney.qewqs.recycler_tutorial.DAO.DAO;
 import com.hchooney.qewqs.recycler_tutorial.DAO.Listitem;
+import com.hchooney.qewqs.recycler_tutorial.DAO.WordList;
 import com.hchooney.qewqs.recycler_tutorial.ImageCTRL.ImageCTRL;
 import com.hchooney.qewqs.recycler_tutorial.R;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
@@ -58,9 +61,10 @@ public class ListAdapter extends Adapter {
         setAnimation(hold.itemView, position);
     }
 
+
     @Override
     public int getItemCount() {
-        return list.size();
+        return DAO.wlist.size();
     }
 
     private void setAnimation(View viewToAnimate, int position) {
